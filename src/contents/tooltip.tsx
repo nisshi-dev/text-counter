@@ -19,6 +19,8 @@ const Tooltip = () => {
     setCharacterCount(message.characterCount);
   });
 
+  if (characterCount === 0) return null;
+
   return <div className="text-red-500">{characterCount}</div>
 }
 
