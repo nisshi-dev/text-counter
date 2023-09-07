@@ -26,7 +26,14 @@ const Tooltip = () => {
 
       if (selected) {
         const rect = window.getSelection().getRangeAt(0).getBoundingClientRect();
-        setPopupPosition({ left: `${rect.left}px`, top: `${rect.bottom}px` });
+
+        const scrollLeft = window.scrollX || document.documentElement.scrollLeft;
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+        setPopupPosition({
+          left: `${rect.left + scrollLeft}px`,
+          top: `${rect.bottom + scrollTop}px`
+        });
       }
     };
 
