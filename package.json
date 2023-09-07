@@ -1,7 +1,7 @@
 {
   "name": "text-counter",
   "displayName": "Text counter",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Effortlessly count characters and words in your selected text.",
   "author": "nisshi.dev",
   "scripts": {

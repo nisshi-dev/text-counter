@@ -1,5 +1,6 @@
 # TextCounter Browser Extension
 ![TextCounter](./assets/icon.png)
+
 TextCounter is a simple browser extension that displays a popup showing the character count of the selected text on any webpage.
 
 ## Features
@@ -8,7 +9,7 @@ TextCounter is a simple browser extension that displays a popup showing the char
 - Works across most web pages
 
 ## Installation
-1. Clone the repository: git clone https://github.com/yourusername/TextCounter.git
+1. Clone the repository: git clone git@github.com:nisshi-dev/text-counter.git
 2. Navigate to chrome://extensions/ in your browser.
 3. Enable "Developer Mode" if it's not already enabled.
 4. Click "Load Unpacked" and select the directory where you cloned the TextCounter repository.
