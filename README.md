@@ -1,4 +1,5 @@
 # TextCounter Browser Extension
+![TextCounter](./assets/icon.png)
 TextCounter is a simple browser extension that displays a popup showing the character count of the selected text on any webpage.
 
 ## Features
