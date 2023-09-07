@@ -1,8 +1,15 @@
 import type { PlasmoCSConfig } from "plasmo"
+import cssText from "data-text:~style.css"
 import { useState } from "react";
 
 export const config: PlasmoCSConfig = {
   matches: ["http://*/*", "https://*/*", "<all_urls>"]
+}
+
+export const getStyle = () => {
+  const style = document.createElement("style")
+  style.textContent = cssText
+  return style
 }
 
 const Tooltip = () => {
@@ -12,7 +19,7 @@ const Tooltip = () => {
     setCharacterCount(message.characterCount);
   });
 
-  return <div>{characterCount}</div>
+  return <div className="text-red-500">{characterCount}</div>
 }
 
 export default Tooltip
